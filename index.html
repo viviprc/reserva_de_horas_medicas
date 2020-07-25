@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de horas médicas</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+    <!--Formulario de reserva de hora médica-->
+     <h3>Solicitud de hora médica</h3>
+    <form class="form-register">
+       <div class="contenedor-inputs">
+           <input type="text" id="rut" name="rut" placeholder="Rut" class="inputcss">
+           <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputcss">
+           <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss">
+           <input type="text" id="edad" name="edad" placeholder="Edad" class="inputcss">
+           <input type="email" id="correo" name="correo" placeholder="Correo" class="inputcss">
+
+           <!--Desplegable con opciones de Especialidad-->
+           <select class="listado" name="especialidad" id="Listado">
+               <option value="">- Especialidad -</option>
+               <option value="Medicina General">Medicina General</option>
+               <option value="Medicina Interna">Medicina Interna</option>
+               <option value="Radiología">Radiología</option>
+               <option value="Traumatología">Traumatología</option>
+               <option value="Kinesiología">Kinesilogía</option>
+           </select>
+           <input type="date" id="fecha" name="fecha" placeholder="Fecha" class="inputcss">
+           <!--Desplegable con opciones de hora-->
+           <select class="listado" name="hora" id="Hora">
+               <option value="">Seleccione una hora</option>
+               <option value="9:00 hrs">9:00 hrs</option>
+               <option value="10:00 hrs">10:00 hrs</option>
+               <option value="11:00 hrs">11:00 hrs</option>
+               <option value="12:00 hrs">12:00 hrs</option>
+               <option value="15:00 hrs">15:00 hrs</option>
+               <option value="16:00 hrs">16:00 hrs</option>
+           </select>
+           <input type="submit" value="Reservar" id="Enviar" class="btn-enviar">
+ 
+       </div>
+    </form>
+
+    
+
+
+    <script src="./assets/js/scrips.js"></script>
+</body>
+</html>
